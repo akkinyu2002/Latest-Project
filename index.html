@@ -1,0 +1,503 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Aakash Neupane is a front-end developer, graphic designer, video editor, and AI creator building premium digital experiences for international clients."
+    />
+    <title>Aakash Neupane | Front-end Developer, Graphic Designer, Video Editor</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      (() => {
+        document.documentElement.classList.add("js");
+
+        try {
+          const savedTheme = localStorage.getItem("theme");
+          const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+          document.documentElement.dataset.theme = savedTheme || (prefersDark ? "dark" : "light");
+        } catch {
+          document.documentElement.dataset.theme = "light";
+        }
+      })();
+    </script>
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <div class="page-bg" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <div class="container nav-bar">
+        <a class="brand" href="#home" aria-label="Aakash Neupane home">
+          <span class="brand-mark">A</span>
+          <span class="brand-copy">
+            <strong>Aakash.</strong>
+            <span>Creative Developer</span>
+          </span>
+        </a>
+
+        <nav class="site-nav" id="primary-nav" aria-label="Primary">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#resume">Resume</a>
+          <a href="#projects">Projects</a>
+          <a href="#video-work">Video</a>
+          <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="nav-actions">
+          <button class="theme-toggle" type="button" aria-label="Switch to dark mode" aria-pressed="false">
+            <span class="theme-toggle-track" aria-hidden="true">
+              <span class="theme-toggle-knob"></span>
+            </span>
+          </button>
+
+          <a class="nav-cta" href="#contact">Hire Me</a>
+          <button class="menu-toggle" type="button" aria-controls="primary-nav" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="menu-lines" aria-hidden="true">
+              <span></span>
+              <span></span>
+            </span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero section" id="home">
+        <div class="container hero-grid">
+          <div class="hero-copy" data-reveal>
+            <div class="availability-pill" aria-label="Availability">
+              <span class="availability-dot" aria-hidden="true"></span>
+              <strong>Open for work</strong>
+              <span>Freelance and remote roles</span>
+            </div>
+
+            <p class="eyebrow">Front-end developer · Graphic designer · Video editor · AI creator</p>
+            <h1>Aakash Neupane</h1>
+            <p class="lede">
+              I create polished websites, brand visuals, video edits, and AI-assisted content systems for
+              brands that need clarity, motion, and technical precision.
+            </p>
+
+            <div class="hero-actions">
+              <a class="button button-primary" href="#contact">Hire Me</a>
+              <a class="button button-secondary" href="#projects">View Work</a>
+            </div>
+
+            <div class="meta-row" aria-label="Key strengths">
+              <span>Frontend Development</span>
+              <span>Graphic Design</span>
+              <span>Video Editing</span>
+              <span>AI Content Systems</span>
+            </div>
+
+            <div class="hero-mini-grid" aria-label="Quick profile details">
+              <div>
+                <span>Location</span>
+                <strong>Nepal</strong>
+              </div>
+              <div>
+                <span>Delivery</span>
+                <strong>Responsive, clean, and fast</strong>
+              </div>
+            </div>
+          </div>
+
+          <aside class="hero-panel" data-reveal>
+            <div class="portrait-card">
+              <img
+                src="https://www.neupaneaakash.com.np/assets/hero.png"
+                alt="Aakash Neupane portrait"
+                loading="eager"
+              />
+
+              <div class="portrait-note">
+                <p>Available for freelance and remote full-time work.</p>
+                <div>
+                  <strong>Based in Nepal</strong>
+                  <span>Trusted by clients who value clean design and dependable delivery.</span>
+                </div>
+                <div class="portrait-status">
+                  <span>Typical reply</span>
+                  <strong>Within 24 hours</strong>
+                </div>
+              </div>
+            </div>
+
+            <div class="hero-stats">
+              <div>
+                <strong>1+</strong>
+                <span>years of hands-on experience</span>
+              </div>
+              <div>
+                <strong>3</strong>
+                <span>core disciplines working as one system</span>
+              </div>
+              <div>
+                <strong>100%</strong>
+                <span>detail-first approach from concept to delivery</span>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="capability-rail" aria-label="Core services">
+        <div class="container rail-grid" data-reveal>
+          <article>
+            <span>01</span>
+            <strong>Web interfaces</strong>
+            <p>Responsive layouts, landing pages, and portfolio systems with polished front-end execution.</p>
+          </article>
+          <article>
+            <span>02</span>
+            <strong>Brand visuals</strong>
+            <p>Social graphics, posters, identity pieces, and presentation assets built with clear hierarchy.</p>
+          </article>
+          <article>
+            <span>03</span>
+            <strong>Video edits</strong>
+            <p>Short-form reels, promos, recaps, and story-led edits shaped for pace and retention.</p>
+          </article>
+          <article>
+            <span>04</span>
+            <strong>AI workflows</strong>
+            <p>Content systems and creative automation that help ideas move faster without losing quality.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section-split" id="about">
+        <div class="container split-grid" data-reveal>
+          <div class="section-heading">
+            <p class="eyebrow">About me</p>
+            <h2>A creative operator who can think like a designer and ship like a developer.</h2>
+          </div>
+
+          <div class="story-copy">
+            <p>
+              I work across branding, front-end interfaces, video, and AI-assisted content workflows. My
+              background in computer engineering and real project work helps me move between visuals,
+              structure, and implementation without losing consistency.
+            </p>
+            <p>
+              I care about systems, spacing, timing, and how every detail supports trust. That means making
+              work that feels premium, but also fast, usable, and dependable for international audiences.
+            </p>
+          </div>
+        </div>
+
+        <div class="container about-grid" data-reveal>
+          <article class="about-block about-story">
+            <p class="block-label">Working style</p>
+            <h3>Handcrafted, focused, and built to read clearly on every screen.</h3>
+            <p>
+              I prefer a minimal structure with strong hierarchy, controlled motion, and custom layouts that
+              feel intentional rather than assembled from a template.
+            </p>
+          </article>
+
+          <article class="about-block about-tools">
+            <p class="block-label">Core tools</p>
+            <ul class="tool-list">
+              <li>Figma</li>
+              <li>Photoshop</li>
+              <li>Illustrator</li>
+              <li>Premiere Pro</li>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>C#</li>
+            </ul>
+          </article>
+
+          <article class="about-block about-focus">
+            <p class="block-label">What clients get</p>
+            <ul class="focus-list">
+              <li>Clear visual direction</li>
+              <li>High-quality motion and editing</li>
+              <li>Responsive interfaces</li>
+              <li>Reliable communication</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="resume">
+        <div class="container section-heading narrow" data-reveal>
+          <p class="eyebrow">Resume</p>
+          <h2>Experience shaped by real projects, engineering study, and practical creative work.</h2>
+        </div>
+
+        <div class="container timeline" data-reveal>
+          <div class="timeline-row">
+            <div class="timeline-meta">2024 - Present</div>
+            <div class="timeline-content">
+              <h3>Independent creative developer</h3>
+              <p>
+                Building portfolio experiences, visual identities, short-form edits, and front-end assets for
+                personal branding and client work.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-row">
+            <div class="timeline-meta">OJT</div>
+            <div class="timeline-content">
+              <h3>Panil Tech</h3>
+              <p>
+                Contributed to web and mobile development tasks, strengthening my understanding of delivery,
+                quality, and production-ready design decisions.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-row">
+            <div class="timeline-meta">Training</div>
+            <div class="timeline-content">
+              <h3>Saraswati Secondary School</h3>
+              <p>
+                Gained practical exposure to computer engineering, collaboration, and digital problem solving
+                while continuing to grow across design and development.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-row timeline-row-solid">
+            <div class="timeline-meta">Education</div>
+            <div class="timeline-content">
+              <h3>Diploma in Computer Engineering</h3>
+              <p>
+                A technical base that supports my design decisions, front-end structure, and ability to work
+                with both creative and functional constraints.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section projects" id="projects">
+        <div class="container section-heading narrow" data-reveal>
+          <p class="eyebrow">Selected work</p>
+          <h2>Case studies that show the thinking, the craft, and the outcome behind each project.</h2>
+        </div>
+
+        <div class="container project-stack">
+          <article class="case-study" data-reveal>
+            <div class="case-media">
+              <img
+                src="https://www.neupaneaakash.com.np/assets/Screenshot%202025-11-20%20225533.png"
+                alt="Portfolio website project preview"
+                loading="lazy"
+              />
+            </div>
+
+            <div class="case-copy">
+              <p class="block-label">Featured project</p>
+              <h3>Portfolio website</h3>
+              <p>
+                A personal portfolio designed, developed, and hosted to present work with more clarity and
+                professionalism. The goal was to create a stronger first impression for clients and employers.
+              </p>
+
+              <dl class="case-details">
+                <div>
+                  <dt>Role</dt>
+                  <dd>Design + Front-end</dd>
+                </div>
+                <div>
+                  <dt>Focus</dt>
+                  <dd>Brand trust and storytelling</dd>
+                </div>
+                <div>
+                  <dt>Stack</dt>
+                  <dd>HTML, CSS, JavaScript</dd>
+                </div>
+              </dl>
+
+              <a class="text-link" href="https://neupaneakas.github.io/uncle-port/" target="_blank" rel="noreferrer">
+                Visit project
+              </a>
+            </div>
+          </article>
+
+          <article class="case-study case-study-reverse" data-reveal>
+            <div class="case-media">
+              <img
+                src="https://www.neupaneaakash.com.np/assets/Screenshot_20221113_125924.png"
+                alt="Hostel mess management app preview"
+                loading="lazy"
+              />
+            </div>
+
+            <div class="case-copy">
+              <p class="block-label">System project</p>
+              <h3>Hostel mess management</h3>
+              <p>
+                A practical mobile and Windows application for managing hostel mess operations. The work
+                focused on structure, usability, and making a complex workflow easy to understand.
+              </p>
+
+              <dl class="case-details">
+                <div>
+                  <dt>Role</dt>
+                  <dd>Development support</dd>
+                </div>
+                <div>
+                  <dt>Focus</dt>
+                  <dd>Workflow clarity</dd>
+                </div>
+                <div>
+                  <dt>Stack</dt>
+                  <dd>C#, SQL, Android Studio</dd>
+                </div>
+              </dl>
+
+              <a class="text-link" href="https://github.com/neupaneakas/hostel-Mesh.git" target="_blank" rel="noreferrer">
+                View source
+              </a>
+            </div>
+          </article>
+
+          <article class="case-study" data-reveal>
+            <div class="case-media">
+              <img
+                src="https://www.neupaneaakash.com.np/assets/new%20copy.jpg"
+                alt="Graphic design portfolio preview"
+                loading="lazy"
+              />
+            </div>
+
+            <div class="case-copy">
+              <p class="block-label">Creative direction</p>
+              <h3>Graphic design portfolio</h3>
+              <p>
+                Brand visuals, social graphics, posters, and identity work built to feel polished and consistent.
+                The emphasis is on visual hierarchy, clean composition, and strong presentation.
+              </p>
+
+              <dl class="case-details">
+                <div>
+                  <dt>Role</dt>
+                  <dd>Brand and visual design</dd>
+                </div>
+                <div>
+                  <dt>Focus</dt>
+                  <dd>Presentation quality</dd>
+                </div>
+                <div>
+                  <dt>Stack</dt>
+                  <dd>Photoshop, Illustrator</dd>
+                </div>
+              </dl>
+
+              <a class="text-link" href="https://www.behance.net/akashneupane5" target="_blank" rel="noreferrer">
+                See Behance
+              </a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section video-section" id="video-work">
+        <div class="container section-heading narrow" data-reveal>
+          <p class="eyebrow">Video edits</p>
+          <h2>A dedicated space for reels, motion pieces, and client edits.</h2>
+        </div>
+
+        <div class="container video-layout" data-reveal>
+          <article class="video-feature">
+            <div class="video-frame">
+              <div class="video-placeholder">
+                <p>Featured reel</p>
+                <strong>Sharp pacing, clean motion, brand-first edits.</strong>
+                <span>Short-form edits, product promos, event recaps, and social cuts shaped for retention and polish.</span>
+              </div>
+            </div>
+
+            <div class="video-meta">
+              <div>
+                <span>Format</span>
+                <strong>Ads, reels, promos, and motion edits</strong>
+              </div>
+              <div>
+                <span>Delivery</span>
+                <strong>Launch-ready edits for social, portfolio, and campaign work</strong>
+              </div>
+            </div>
+          </article>
+
+          <div class="video-grid">
+            <article class="video-card">
+              <div class="video-thumb">Social reel</div>
+              <h3>Short-form social edit</h3>
+              <p>Fast openings, tight rhythm, and clean visual emphasis for Instagram, TikTok, and YouTube Shorts.</p>
+            </article>
+
+            <article class="video-card">
+              <div class="video-thumb">Brand story</div>
+              <h3>Client case study</h3>
+              <p>Structured edits that combine story, transitions, captions, and pacing into a polished client narrative.</p>
+            </article>
+
+            <article class="video-card video-card-accent">
+              <div class="video-thumb">Signature reel</div>
+              <h3>Signature reel</h3>
+              <p>A focused highlight piece built around your strongest visuals, audio timing, and brand personality.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section contact-section" id="contact">
+        <div class="container contact-grid" data-reveal>
+          <div class="section-heading">
+            <p class="eyebrow">Contact</p>
+            <h2>Available for freelance, remote collaboration, and long-term creative work.</h2>
+            <p>
+              If you need a designer-developer who can handle visual direction, editing, and front-end
+              execution with care, I’m open to discussing the next project.
+            </p>
+          </div>
+
+          <div class="contact-card">
+            <a href="mailto:neupaneakash687@gmail.com">
+              <span>Email</span>
+              <strong>neupaneakash687@gmail.com</strong>
+            </a>
+            <a href="tel:+9779860212330">
+              <span>Phone</span>
+              <strong>+977 9860212330</strong>
+            </a>
+            <div>
+              <span>Location</span>
+              <strong>Satyawati-6, Johang, Gulmi, Nepal</strong>
+            </div>
+
+            <div class="contact-links">
+              <a href="https://linkedin.com/in/aakash-neupane-4bb97031a" target="_blank" rel="noreferrer">LinkedIn</a>
+              <a href="https://www.behance.net/akashneupane5" target="_blank" rel="noreferrer">Behance</a>
+              <a href="https://github.com/neupaneakas" target="_blank" rel="noreferrer">GitHub</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-bar">
+        <p>Aakash Neupane</p>
+        <p>Copyright © <span id="year"></span> All Rights Reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>
